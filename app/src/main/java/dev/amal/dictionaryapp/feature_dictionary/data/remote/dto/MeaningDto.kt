@@ -6,9 +6,8 @@ data class MeaningDto(
     val definitions: List<DefinitionDto>,
     val partOfSpeech: String
 ) {
-    fun toMeaning(): Meaning =
-        Meaning(
-            definitions = definitions.map { it.toDefinition() },
-            partOfSpeech = partOfSpeech
-        )
+    fun toMeaning(): Meaning = Meaning(
+        definitions = definitions.map { it.toDefinition() },
+        partOfSpeech = partOfSpeech
+    )
 }

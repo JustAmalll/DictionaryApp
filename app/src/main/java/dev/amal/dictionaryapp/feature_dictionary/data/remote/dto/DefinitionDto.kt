@@ -8,11 +8,10 @@ data class DefinitionDto(
     val example: String?,
     val synonyms: List<String>
 ) {
-    fun toDefinition(): Definition =
-        Definition(
-            antonyms = antonyms,
-            definition = definition,
-            example = example,
-            synonyms = synonyms
-        )
+    fun toDefinition(): Definition = Definition(
+        antonyms = antonyms,
+        definition = definition,
+        example = example,
+        synonyms = synonyms
+    )
 }
